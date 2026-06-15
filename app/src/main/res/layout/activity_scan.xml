@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1320">
+
+    <!-- TOP BAR -->
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            app:tint="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Scan Product"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+    </LinearLayout>
+
+
+    <!-- CAMERA AREA -->
+
+    <FrameLayout
+        android:id="@+id/cameraArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:background="#101826"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toTopOf="@id/instruction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Camera preview placeholder -->
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/barcodeScanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- QR FRAME -->
+
+<!--        <ImageView-->
+<!--            android:layout_width="230dp"-->
+<!--            android:layout_height="230dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/qr_frame"/>-->
+
+    </FrameLayout>
+
+
+    <!-- INSTRUCTION -->
+
+    <TextView
+        android:id="@+id/instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place QR Code Inside Frame"
+        android:textColor="#E5E7EB"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomControls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!-- BOTTOM CONTROLS -->
+
+    <LinearLayout
+        android:id="@+id/bottomControls"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- FLASH -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnFlash"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_button"
+                android:padding="12dp"
+                android:src="@drawable/ic_flash"
+                app:tint="#FFFFFF"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Flash"
+                android:textColor="#E5E7EB"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+
+
+        <!-- SCAN BUTTON -->
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/scanButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/scan_button"
+                android:padding="18dp"
+                android:src="@drawable/ic_camera"
+                app:tint="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+        <!-- GALLERY -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnGallery"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_button"
+                android:padding="12dp"
+                android:src="@drawable/ic_gallery"
+                app:tint="#FFFFFF"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Gallery"
+                android:textColor="#E5E7EB"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
