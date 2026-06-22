@@ -317,6 +317,13 @@ Already Scanned   Suspicious
 
 ![Profile](screenshots/Profile%20Screen.jpg)
 
+---
+
+## 📱 APK
+APK available in GitHub Releases.
+
+---
+
 ## 🛠️ Setup Instructions
 
 1️⃣ **Clone Repository**
@@ -444,7 +451,7 @@ Run ▶
 
 3. 📈 **Advanced Analytics**
 
-   Interactive charts and manufacturer dashboards.
+   Interactive charts and user dashboards.
 
 4. 🔔 **Push Notifications**
 
