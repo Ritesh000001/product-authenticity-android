@@ -1,4 +1,4 @@
-# 🛡️ AuthentiScan - QR Based Product Authenticity Scanner
+# 🛡️ AuthentiScan - QR Based Product Authenticity Scanner (Consumer Side)
 
 <div align="center">
 
@@ -12,6 +12,32 @@
 A smart Android application that helps consumers verify product authenticity, detect duplicate products, and report suspicious items using QR code technology and Firebase-powered validation.
 
 </div>
+
+---
+
+## 🌐 Live Demo
+
+**Android Application (APK):**
+Download the latest APK from the this repository Releases section.
+
+**Manufacturer Portal**  
+👉 https://authentiscan-3478a.web.app/
+
+---
+
+## 🔗 Related Repository
+
+**This project is part of the AuthentiScan ecosystem.**
+ - 🏭 Manufacturer Portal (React)
+ - 📱 Consumer Android Application (Kotlin)
+ - ☁️ Firebase Backend (Authentication, Firestore, Storage)
+
+Together they provide a complete QR-based product authenticity verification system.
+
+| Repository | Link |
+|------------|-------------|
+| **Manufacturer Portal** | https://github.com/Ritesh000001/product-authenticity-web |
+| **Android Application** | https://github.com/Ritesh000001/product-authenticity-android |
 
 ---
 
@@ -439,6 +465,33 @@ Run ▶
 
 ---
 
+## 🔗 Relationship With Web Portal (Manufacturer Side)
+
+This portal is only one part of the complete AuthentiScan ecosystem. 
+
+**1. Web Portal**
+
+Responsible for:
+
+- Product Registration
+- QR Code Generation
+- Scratch Code Generation
+- Product Data Management
+
+**2. Android Application**
+
+Responsible for:
+
+- QR Scanning
+- Product Verification
+- Scan Tracking
+- Analytics
+- Fake Product Reporting
+
+This Android Application can only verify the products which are registered through the web portal.
+
+---
+
 ## 🔮 Future Enhancements
 
 1. 🌍 **Live GPS Integration**
@@ -494,7 +547,10 @@ This project is intended for educational, research, and demonstration purposes.
 This project is a prototype demonstration of a centralized product authentication ecosystem.
 
 The Android application can only verify products that have been registered through the Manufacturer Web Portal and stored in Firebase Firestore.
-The verification results depend on the accuracy of the product data stored in Firebase Firestore. The developers are not responsible for any misuse, incorrect product information, or commercial deployment without appropriate security and compliance measures.
+
+The verification results depend on the accuracy of the product data stored in Firebase Firestore. 
+
+The developers are not responsible for any misuse, incorrect product information, or commercial deployment without appropriate security and compliance measures.
 
 ---
 
@@ -510,7 +566,7 @@ The verification results depend on the accuracy of the product data stored in Fi
 
 ---
 
-## 📞 Contact & Support
+##  💬 Feedback & Suggestions
 
 Found a bug? Have a suggestion? We'd love to hear from you!
 
@@ -520,10 +576,22 @@ Found a bug? Have a suggestion? We'd love to hear from you!
 
 ---
 
+## ⭐ Support
+
+If you found this project useful:
+
+- Star the repository ⭐
+- Fork the project 🍴
+- Share feedback 💡
+
+---
+
 <div align="center">
 
-  **If you found this project useful, please give it a ⭐ on GitHub!**
+🛡 AuthentiScan Ecosystem
 
-  Made with ❤️
+Manufacturer Portal + Android Application = Complete Product Authentication System
+
+Made with ❤️ by Ritesh Singh Kushwaha
 
 </div>
